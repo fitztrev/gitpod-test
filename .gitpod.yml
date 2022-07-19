@@ -1,0 +1,9 @@
+checkoutLocation: gitpod
+workspaceLocation: gitbot.code-workspace
+
+additionalRepositories:
+  - url: https://github.com/lichess-org/lila.git
+  - url: https://github.com/lichess-org/lila-ws.git
+  - url: https://github.com/lichess-org/lila-db-seed.git
+  - url: https://github.com/lichess-org/fishnet.git
+  - url: https://github.com/lichess-org/lila-fishnet.git
