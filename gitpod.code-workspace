@@ -1,10 +1,10 @@
 {
     "folders": [
-        { "path": "lila" },
-        { "path": "lila-ws" },
-        { "path": "lila-db-seed" },
-        { "path": "fishnet" },
-        { "path": "lila-fishnet" },
+        { "path": "/workspace/lila" },
+        { "path": "/workspace/lila-ws" },
+        { "path": "/workspace/lila-db-seed" },
+        { "path": "/workspace/fishnet" },
+        { "path": "/workspace/lila-fishnet" },
         { "path": "." }
     ]
 }
