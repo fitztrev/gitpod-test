@@ -9,7 +9,6 @@ additionalRepositories:
   - url: https://github.com/lichess-org/lila-db-seed.git
   - url: https://github.com/lichess-org/fishnet.git
   - url: https://github.com/lichess-org/lila-fishnet.git
-  - url: https://github.com/lichess-org/api.git
   - url: https://github.com/lichess-org/pgn-viewer.git
 
 tasks:
@@ -60,11 +59,6 @@ tasks:
   #     sbt bloopInstall
   #     bloop compile lila
   #     bloop run lila -m play.core.server.ProdServerStart
-  - name: api-docs
-    command: |
-      cd /workspace/api/doc
-      npm install
-      npm run serve -- --watch
   - name: pgn-viewer
     command: |
       cd /workspace/pgn-viewer
@@ -76,7 +70,7 @@ tasks:
 ports:
   - port: 9663
     name: lila
-    onOpen: open-browser
+    onOpen: open-preview
   - port: 9664
     name: lila-ws
     onOpen: ignore
@@ -93,4 +87,3 @@ ports:
     onOpen: ignore
   - port: 8080
     name: api-docs
-    onOpen: open-browser
