@@ -1,5 +1,7 @@
+image: ghcr.io/rosen-score/lila-gitpod:main
+
 checkoutLocation: gitpod
-workspaceLocation: gitpod.code-workspace
+workspaceLocation: gitpod/gitpod.code-workspace
 
 additionalRepositories:
   - url: https://github.com/lichess-org/lila.git
@@ -7,3 +9,22 @@ additionalRepositories:
   - url: https://github.com/lichess-org/lila-db-seed.git
   - url: https://github.com/lichess-org/fishnet.git
   - url: https://github.com/lichess-org/lila-fishnet.git
+
+ports:
+  - port: 9663
+    name: lila
+    onOpen: open-preview
+  - port: 9664
+    name: lila-ws
+    onOpen: ignore
+  - port: 9665
+    name: lila-fishnet
+  - port: 6379
+    name: redis
+    onOpen: ignore
+  - port: 8212
+    name: bloop
+    onOpen: ignore
+  - port: 27017
+    name: mongodb
+    onOpen: ignore
