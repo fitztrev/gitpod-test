@@ -62,21 +62,21 @@ tasks:
   #     bloop run lila -m play.core.server.ProdServerStart
   - name: api-docs
     command: |
-      cd /workspace/api
+      cd /workspace/api/doc
       npm install
       npm run serve -- --watch
   - name: pgn-viewer
     command: |
       cd /workspace/pgn-viewer
       npm install
-      npm run sass-dev
+      npm run sass-prod
       npm run dev
       npm run demo
 
 ports:
   - port: 9663
     name: lila
-    onOpen: open-preview
+    onOpen: open-browser
   - port: 9664
     name: lila-ws
     onOpen: ignore
@@ -93,3 +93,4 @@ ports:
     onOpen: ignore
   - port: 8080
     name: api-docs
+    onOpen: open-browser
