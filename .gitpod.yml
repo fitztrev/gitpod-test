@@ -1,5 +1,5 @@
 checkoutLocation: gitpod
-workspaceLocation: gitbot.code-workspace
+workspaceLocation: gitpod.code-workspace
 
 additionalRepositories:
   - url: https://github.com/lichess-org/lila.git
