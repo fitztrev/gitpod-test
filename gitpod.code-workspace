@@ -5,6 +5,8 @@
         { "path": "/workspace/lila-db-seed" },
         { "path": "/workspace/fishnet" },
         { "path": "/workspace/lila-fishnet" },
+        { "path": "/workspace/api" },
+        { "path": "/workspace/pgn-viewer" },
         { "path": "." }
     ]
 }
